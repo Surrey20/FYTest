@@ -86,25 +86,26 @@ p.ex1{
 </script>
 
 <hr>
-<title>Change Button Colour</title>
-    <button id="colorButton">Click me to change colour</button>
+<h2>Change Button Colour</h2>
+    <body>
+      <button id="colorButton">Click me to change colour</button>
+      <script>
+        var button = document.getElementById("colorButton");
+        function changeColor() {
+          var randomColor = "#" + Math.floor(Math.random()*16777215).toString(16);
+          button.style.backgroundColor = randomColor}
+          button.addEventListener("click", changeColor)
+      </script>
+
+<h2>Task 1</h2>
+    <button id="Button1">Find out what happens when you click me</button>
     <script>
-      var button = document.getElementById("colorButton");
+      var button = document.getElementById("Button1");
       function changeColor() {
-        var randomColor = "#" + Math.floor(Math.random()*16777215).toString(16);
+        var randomnumber = Math.floor(Math.random()*10).toString(16);
         button.style.backgroundColor = randomColor}
         button.addEventListener("click", changeColor)
     </script>
-
-<title>Task 1</title>
-    <button id="colorButton">Find out what happens when you click me</button>
-    <script>
-      var button = document.getElementById("colorButton");
-      function changeColor() {
-        var randomColor = "#" + Math.floor(Math.random()*16777215).toString(16);
-        button.style.backgroundColor = randomColor}
-        button.addEventListener("click", changeColor)
-    </script>
-
+    </body>
     
 </html>
