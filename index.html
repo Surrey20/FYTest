@@ -102,9 +102,10 @@ p.ex1{
     <button id="Button1">Find out what happens when you click me</button>
     <script>
       var button = document.getElementById("Button1");
+      var paragraph = document.getElementById("randomnumber");
       function randomnumber1() {
-        var randomnumber = Math.floor(Math.random()*10).toString(16);
-        button.getelementById = randomnumber
+        var randomnumber = Math.floor(Math.random()*10)+1;
+        paragraph.textContent = "Here we go... your number is" + randomnumber
         button.addEventListener("click", randomnumber1)
     </script>
     </body>
