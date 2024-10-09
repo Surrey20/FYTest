@@ -2,6 +2,7 @@
 <html>
 
 <head> 
+  <script> type=”text/javascript” src=https://www.gstatic.com/charts/loader.js></script>
   <img src  = "download.png" alt="Banner" width="800">
     <h1><b>ENG0018  Computer  Laboratory 2023/24</b><h1>
     <h2> Hello world </h2>
@@ -107,5 +108,25 @@ p.ex1{
         button.addEventListener("click", randomnumber1)
     </script>
     </body>
-    
+
+<hr>
+<h2> Now I'm making a chart </h2>
+
+<div id="chart_div"></div>
+<script type="text/javascript">
+  google.charts.load(‘current’, { ‘packages’: [‘corechart’] });
+  google.charts.setOnLoadCallback(drawChart);
+  function drawChart() 
+  {var data = google.visualization.arrayToDataTable([
+    ['Task', 'Hours per day']
+    ['Coding for Foundation Year', 3]
+    ['Careers Fair', 1]
+    ['Meetings', 2]
+    ['Home time', 4]
+    ['Work', 6]
+    ['Sleep', 8] ]);
+
+   var options = {title: 'My Daily Activities - Wed. 9th Oct.'};
+   var chart = new google.visualization.PieChart(document.getElementById(‘chart_div’));chart.draw(data, options);}
+</script>
 </html>
