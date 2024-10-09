@@ -3,22 +3,7 @@
 
 <head> 
   <script> type="text/javascript" src=https://www.gstatic.com/charts/loader.js> </script>
-  <script type="text/javascript">
-      google.charts.load('current', { 'packages': ['corechart'] });
-      google.charts.setOnLoadCallback(drawChart);
-      function drawChart() 
-      {var data = google.visualization.arrayToDataTable([
-          ['Task', 'Hours per day']
-          ['Coding for Foundation Year', 3]
-          ['Careers Fair', 1]
-          ['Meetings', 2]
-          ['Home time', 4]
-          ['Work', 6]
-          ['Sleep', 8] ]);
-    
-   var options = {title: 'My Daily Activities - Wed. 9th Oct.'};
-   var chart = new google.visualization.PieChart(document.getElementById('chart_div'));chart.draw(data, options);}
-  </script>
+  
 </head>
      <head>
   <img src  = "download.png" alt="Banner" width="800">
@@ -134,7 +119,23 @@ p.ex1{
 <h2> Now I'm making a chart </h2>
 
     <body>
+      <script type="text/javascript"> 
       <div id="chart_div"></div>
+      google.charts.load('current', { 'packages': ['corechart'] });
+      google.charts.setOnLoadCallback(drawChart);
+      function drawChart() 
+      {var data = google.visualization.arrayToDataTable([
+          ['Task', 'Hours per day']
+          ['Coding for Foundation Year', 3]
+          ['Careers Fair', 1]
+          ['Meetings', 2]
+          ['Home time', 4]
+          ['Work', 6]
+          ['Sleep', 8] ]);
+    
+     var options = {title: 'My Daily Activities - Wed. 9th Oct.'};
+     var chart = new google.visualization.PieChart(document.getElementById('chart_div'));chart.draw(data, options);}
+      </script>
 
   <pre> This isn't working is it? </pre>
     </body>
