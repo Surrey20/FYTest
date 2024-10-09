@@ -87,7 +87,7 @@ p.ex1{
 
 <hr>
 <title>Change Button Colour</title>
-    <button id="colorButton">Click me to change colour</button
+    <button id="colorButton">Click me to change colour</button>
     <script>
       var button = document.getElementById("colorButton");
       function changeColor() {
@@ -95,5 +95,16 @@ p.ex1{
         button.style.backgroundColor = randomColor}
         button.addEventListener("click", changeColor)
     </script>
+
+<title>Task 1</title>
+    <button id="colorButton">Find out what happens when you click me</button>
+    <script>
+      var button = document.getElementById("colorButton");
+      function changeColor() {
+        var randomColor = "#" + Math.floor(Math.random()*16777215).toString(16);
+        button.style.backgroundColor = randomColor}
+        button.addEventListener("click", changeColor)
+    </script>
+
     
 </html>
